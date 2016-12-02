@@ -111,11 +111,19 @@
 
 .section__dim {
   width: 765px;
+  height: 150px;
   background-color: white;
+
 }
 
-.video__detsils {
-  width: 300px;
+.user__width {
+  width: 75%;
+}
+
+.video__details--count {
+  float: right;
+  font-size: 14px;
+  margin: 0;
 }
 
 .wrapper {
