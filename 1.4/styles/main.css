@@ -1,0 +1,94 @@
+.aside__right {
+  float: right;
+  width: 20%;
+}
+
+.aside__dim {
+  width: 150px;
+  margin-right: 12%
+}
+
+.aside__img--dim {
+  width: 300px;
+  margin: auto;
+}
+
+.aside__background {
+  background-color: white;
+}
+
+.button__dim {
+  height: 30px;
+  width: 120px;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+
+.body__background {
+  background-color: gainsboro;
+}
+
+.header {
+  height: 82px;
+}
+
+.header__background {
+  background-color: white;
+}
+
+.header__group--right {
+  float: right;
+  height: 45px;
+}
+
+.header__vert {
+  vertical-align: middle;
+}
+
+.img__dim--header {
+  height: 45px;
+  border-radius: 100px
+}
+
+.img__dim--video {
+  width: 765px;
+  height: 520px;
+}
+
+.input__dim {
+  height: 15px;
+  border-radius: 4px;
+  margin-left: 40px;
+}
+
+.main__left {
+  float: left;
+  width: 50%;
+}
+
+.main__back--ground {
+  background-color: white;
+}
+
+.no__block {
+  display: inline-block;
+}
+
+.search__bar {
+  width: 400px;
+  height: 30px;
+}
+
+.search__button--dim {
+  height: 30px;
+  width: 65px;
+}
+
+.wrapper {
+  width: 1150px;
+  margin: 0 auto 0 auto;
+}
+
+.youtube {
+  height: 45px;
+}
