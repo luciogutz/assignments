@@ -26,6 +26,10 @@
   font-size: 16px;
 }
 
+.block {
+  display: block;
+}
+
 .button__dim {
   height: 30px;
   width: 120px;
@@ -37,13 +41,16 @@
   background-color: gainsboro;
 }
 
-.div__dim {
-  width: 765px;
-  background-color: white;
+.cat__vert--align {
+  vertical-align: top;
 }
 
 .div__height {
   height: 200px;
+}
+
+.freestyle__top {
+  vertical-align: top;
 }
 
 .h1__dim {
@@ -77,6 +84,10 @@
   margin-bottom: 5px;
 }
 
+.in__block {
+  display: inline-block;
+}
+
 .input__dim {
   height: 15px;
   border-radius: 4px;
@@ -86,14 +97,6 @@
 .main__left {
   float: left;
   width: 50%;
-}
-
-.no__block {
-  display: inline-block;
-}
-
-.pad__section--1 {
-    padding-top: 15px;
 }
 
 .search__bar {
@@ -106,13 +109,18 @@
   width: 65px;
 }
 
-.user__cat {
-  height: 45px;
+.section__dim {
+  width: 765px;
+  background-color: white;
+}
+
+.video__detsils {
+  width: 300px;
 }
 
 .wrapper {
   width: 1150px;
-  margin: 20px auto 0 auto;
+  margin: 20px 0px 0 100px;
 }
 
 .youtube {
