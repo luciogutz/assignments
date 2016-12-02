@@ -7,30 +7,31 @@
   </head>
   <body>
     <!-- contains escape hatch, search bar, upload button and profile pic -->
-    <header class="header">
+    <header class="header header_back--ground">
       <img  class="youtube header__vert"
             src="assets/YouTube.png"
             alt="home page">
         <input
-            class="search__bar no__block header__vert input__height"
-            type="text"
+            class="search__bar no__block header__vert input__dim"
+            type="search"
             name=""
             value="search">
+        <button class="search__button--dim" type="button" name="Search">Search</button>
       <div class="header__group--right">
         <button
-              class="button__dim header__vert"
+              class="button__dim"
               type="button"> Upload
         </button>
-        <img  class="img__dim header__vert"
+        <img  class="img__dim--header header__vert"
               src="assets/user-corner.jpg"
               alt=" profile pic ">
       </div>
     </header>
     <!-- main body of page  -->
-    <main class="main__left">
-      <video
-           src="#" width="320" height="240"controls>
-      </video>
+  <div class="wrapper">
+    <main class="main__left main__back--ground">
+      <!-- This is a temp img of where the video will be placed at a later point -->
+      <img class="img__dim--video" src="assets/youtube_video_img.png" alt="">
       <section>
         <h1 class="no__block">
            The Matrix (1999)  The Pill scene
@@ -66,14 +67,14 @@
       </section>
     </main>
     <!-- side bar right, contains related videos -->
-    <aside class="aside__right">
+    <aside class="aside__right aside__dim">
       <section>
         <!-- ad photo -->
-        <img src="assets/bread-ad.jpeg">
+        <img class="aside__img--dim" src="assets/bread-ad.jpeg">
         <p> up next </p>
         <p> Autoplay </p>
         <article>
-            <img src="assets/suggestion-1.jpg">
+            <img class="aside__img--dim" src="assets/suggestion-1.jpg">
             <h2>
                The Matrix-1999 (Welcome  the real world)
             </h2>
@@ -81,7 +82,7 @@
             <p> 463,371 views </p>
         </article>
         <article>
-            <img src="assets/suggestion-2.jpg">
+            <img class="aside__img--dim" src="assets/suggestion-2.jpg">
             <h2>
                "The Matrix" (1999)--'Construct' Scenes
             </h2>
@@ -89,7 +90,7 @@
             <p> 708,357 views </p>
         </article>
         <article>
-            <img src="assets/suggestion-3.jpg">
+            <img class="aside__img--dim" src="assets/suggestion-3.jpg">
             <h2>
                Morpheus explains what is the Matrix
             </h2>
@@ -97,7 +98,7 @@
             <p> 584,308 views </p>
         </article>
         <article>
-            <img src="assets/suggestion-4.jpg">
+            <img class="aside__img--dim" src="assets/suggestion-4.jpg">
             <h2>
                File Theory:Neo ISN'T The One in The Matrix Trilogy
             </h2>
@@ -106,5 +107,6 @@
         </article>
       </section>
     </aside>
+   </div>
   </body>
 </html>
