@@ -109,6 +109,14 @@
   width: 65px;
 }
 
+.sharing__details {
+  background-color: white;
+  width: 765px;
+  border-top: solid black 1px;
+  padding: 8px;
+  margin-top: 15px;
+}
+
 .section__dim {
   width: 765px;
   height: 150px;
@@ -116,14 +124,22 @@
   padding: 10px;
 }
 
-.user__width {
-  width: 75%;
+.section__details {
+  width: 765px;
+  background-color: white;
+  padding: 8px;
+}
+
+.user__details {
+  background-color: white;
+  width: 765px;
 }
 
 .video__details--count {
   float: right;
   font-size: 14px;
-  margin: 0;
+  margin-right: 12px;
+  vertical-align: bottom;
 }
 
 .wrapper {
