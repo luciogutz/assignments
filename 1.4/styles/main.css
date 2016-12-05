@@ -8,8 +8,9 @@
 }
 
 .aside__dim {
-  width: 225px;
-  margin-right: 12%
+  width: 290px;
+  margin-right: 80px;
+  margin-left: 20px;
 }
 
 .aside__img--dim {
@@ -18,12 +19,53 @@
   margin: auto;
 }
 
+.aside__bread {
+  width: 200px;
+  height: 60px;
+  padding: 4px;
+}
+
 .aside__background {
   background-color: white;
 }
 
 .aside__h2--dim {
-  font-size: 16px;
+  font-size: 12px;
+  vertical-align: top;
+  margin-top: 0;
+  width: 120px;
+  margin-left: 0;
+}
+
+.aside__h2--dim2 {
+  float: right;
+  font-size: 12px;
+  vertical-align: top;
+  margin-top: 0px;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+
+.aside__user--details {
+  font-size: 8px;
+}
+
+.aside__views {
+}
+
+.autoplay__details {
+  float: right;
+  padding-right: 2px;
+  margin-right: 4px;
+}
+
+.article1__details {
+  height: 100px;
+}
+
+.article__text {
+  vertical-align: top;
 }
 
 .block {
@@ -35,12 +77,19 @@
 }
 
 .cat__vert--align {
-  vertical-align: middle;
-  width: 25px;
+
 }
 
 .div__height {
   height: 200px;
+}
+
+.div__article--dim {
+  height: 60px;
+  width: 100px;
+  vertical-align: top;
+  float: right;
+  margin-right: 75px;
 }
 
 .freestyle__top {
@@ -59,7 +108,7 @@
 }
 
 .header {
-  height: 65px;
+  height: 75px;
 }
 
 .header__vert {
@@ -124,6 +173,17 @@
   background-color: white;
 }
 
+.showmore__details {
+  background-color: white;
+  text-align: center;
+  width: 765px;
+  margin-top: 0;
+  border-top: solid grey 1px;
+  padding: 4px;
+  color: grey;
+  font-size: 10px;
+}
+
 .section__dim {
   width: 765px;
   height: 150px;
@@ -163,16 +223,20 @@ span {
 }
 
 .upload__details {
-  margin-right: 40px;
+  margin-left: 450px;
+  margin-top: 0px;
+  margin-bottom: 55px;
   border-radius: 4px;
   text-decoration: none;
   color: black;
   background-color: gainsboro;
   padding: 8px;
   border: solid grey 1px;
-  vertical-align: bottom;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  vertical-align: middle;
+}
+
+.upnext__details {
+  margin-left: 4px;
 }
 
 .video__details--count {
