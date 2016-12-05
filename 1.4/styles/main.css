@@ -111,7 +111,12 @@
 }
 
 .cat__vert--align {
+ height: 60px;
+}
 
+.dislike__image {
+  height: 15px;
+  vertical-align: top;
 }
 
 .div__height {
@@ -132,7 +137,7 @@
   margin-bottom: 2px;
 }
 
-.freestyles__details {
+.freestyler__details {
   text-decoration: none;
   color: black;
 }
@@ -183,9 +188,19 @@
   vertical-align: middle;
 }
 
+.likes__image {
+  height: 15px;
+  vertical-align: top;
+}
+
 .main__left {
   float: left;
   width: 50%;
+}
+
+.plus__image {
+  height: 15px;
+  vertical-align: middle;
 }
 
 .search__button--dim {
@@ -198,7 +213,7 @@
   background-color: white;
   width: 757px;
   height: 30px;
-  margin-top: 12px;
+  margin-top: 10px;
   padding-top: 4px;
 }
 
@@ -209,6 +224,11 @@
 
 .sharing__float {
   float: right;
+}
+
+.sharing__image {
+  height: 15px;
+  vertical-align: middle;
 }
 
 .showmore__details {
@@ -251,6 +271,7 @@ span {
   background-color: white;
   color: black;
   border: solid gray 1px;
+  margin-left: 3px;
 }
 
 .user__details {
@@ -284,8 +305,8 @@ span {
   font-size: 24px;
   margin-left: 20px;
   vertical-align: bottom;
-  margin-bottom: 5px;
-  border-bottom: solid blue 1px;
+  margin-bottom: 0px;
+  border-bottom: solid blue 3px;
 }
 
 .wrapper {
