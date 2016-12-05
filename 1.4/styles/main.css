@@ -8,7 +8,7 @@
 }
 
 .aside__dim {
-  width: 290px;
+  width: 340px;
   margin-right: 80px;
   margin-left: 20px;
 }
@@ -17,6 +17,7 @@
   width: 110px;
   height: 70px;
   margin: auto;
+  margin-left: 12px;
 }
 
 .aside__bread {
@@ -33,8 +34,9 @@
   font-size: 12px;
   vertical-align: top;
   margin-top: 0;
-  width: 120px;
-  margin-left: 0;
+  width: 160px;
+  margin-right: 40px;
+  margin-bottom: 0px;
 }
 
 .aside__h2--dim2 {
@@ -44,14 +46,46 @@
   margin-top: 0px;
   margin-left: 0;
   margin-right: 10px;
+  margin-bottom: 0px;
 }
 
 
 .aside__user--details {
   font-size: 8px;
+  margin-bottom: 0px;
+  float: right;
+  margin-right: 80px;
+  margin-top: 0px;
+}
+
+.aside__user--details1 {
+  font-size: 8px;
+  margin-bottom: 0px;
+  float: right;
+  margin-right: 111px;
+  margin-top: 0px;
+}
+
+.aside__user--details3 {
+  font-size: 8px;
+  margin-bottom: 0px;
+  float: right;
+  margin-right: 91px;
+  margin-top: 0px;
 }
 
 .aside__views {
+  font-size: 8px;
+  float: right;
+  margin-top: 0px;
+  margin-right: 92px;
+}
+
+.aside__views4 {
+  font-size: 8px;
+  float: right;
+  margin-top: 0px;
+  margin-right: 86px;
 }
 
 .autoplay__details {
@@ -86,7 +120,7 @@
 
 .div__article--dim {
   height: 60px;
-  width: 100px;
+  width: 140px;
   vertical-align: top;
   float: right;
   margin-right: 75px;
@@ -250,7 +284,7 @@ span {
 
 .wrapper {
   width: 1150px;
-  margin: 20px 0px 0 100px;
+  margin: 20px 0px 0 50px;
 }
 
 .youtube {
