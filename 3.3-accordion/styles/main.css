@@ -8,33 +8,40 @@
 .info {
   font-family: georgia serif;
   /*display: inline-block;*/
-  width: 600px;
+  width: 594px;
+  background-color: white;
+  border: solid lightgrey 1px;
+  color: black;
 }
 .ul__details {
-  padding: 2px;
+  width: 600px;
+  padding-left: 0px;
 }
 
 .booking {
   border: solid 2px darkblue;
   text-decoration: none;
-  background-color: blue;
+  background-color: grey;
   padding: 4px;
   color: white;
   border-radius: 8px;
 }
 
 .destination__details {
-  height: 30px;
+  margin-top: 10px;
+  height: 35px;
   overflow: hidden;
   margin-right: 0;
-  background-color: lightgrey;
+  border: solid grey 1px;
 }
 
 .more__info {
   height:200px;
+  background-color: blue;
+  color: white;
 }
 
 .wrapper {
   height: 800px;
-  width: 600px;
+  width: 620px;
 }

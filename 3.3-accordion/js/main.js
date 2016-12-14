@@ -11,6 +11,11 @@ $(function(){
 
     $clickedElement.addClass("more__info");
 
+    // if (#clickedElement.hasClass("more__info")) {
+    //     .removeClass("more__info");
+    // }
+
+
   });
 
 });
