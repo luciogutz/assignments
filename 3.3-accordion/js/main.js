@@ -12,5 +12,5 @@ $(function(){
     $clickedElement.addClass("more__info");
 
   });
-console.log($);
+
 });
