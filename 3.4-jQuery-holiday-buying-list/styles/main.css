@@ -1,0 +1,23 @@
+* {
+box-sizing: border-box;
+}
+
+.body {
+  border: solid lightgrey 1px;
+  margin: 0 auto;
+  width: 700px;
+  height: 600px;
+}
+
+.main {
+  border: solid lightgrey 2px;
+  height: 400px;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.giftItem {
+  height:
+  width: 80%
+
+}
