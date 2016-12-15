@@ -8,12 +8,11 @@ $(function(){
     // when the element is clicked i need it to expand to show more information, but I also need the expanded destination to go back to its original place when another destination is "clicked".
     $destinationElement.filter(".more__info").removeClass("more__info");
 
-
-    $clickedElement.addClass("more__info");
-
-    // if (#clickedElement.hasClass("more__info")) {
-    //     .removeClass("more__info");
-    // }
+    if ($clickedElement.hasClass("more__info")) {
+      $clickedElement.removeClass("more__info")
+    } else {
+      $clickedElement.addClass("more__info");
+    };
 
 
   });
