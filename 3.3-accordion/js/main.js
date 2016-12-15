@@ -13,6 +13,7 @@ $(function(){
       // } else {
             $clickedElement.addClass("more__info")
     //  };
+    
 
   });
 });
