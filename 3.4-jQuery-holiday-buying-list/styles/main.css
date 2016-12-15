@@ -26,7 +26,7 @@ box-sizing: border-box;
 .giftSubmit {
   background-color: yellowgreen;
   color: white;
-  display: inline-block;
+  /*display: inline-block;*/
   font-size: 35px;
   float: right;
   height: 79px;
@@ -51,8 +51,12 @@ box-sizing: border-box;
 }
 
 .total {
-  height: 10%;
-  width: 100%;
-  border-top: lightgrey 2px;
-  float: bottom;
+  border: lightgrey 2px;
+  display: inline-block;
+  float: right;
+  line-height: 65px;
+  margin-left: 49px;
+  margin-top: 0;
+  height: 65px;
+  width: 700px;
 }
