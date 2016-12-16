@@ -2,15 +2,43 @@
 box-sizing: border-box;
 }
 
+.amount {
+  display: inline-block;
+  font-size: 32px;
+  width: 12%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .body {
   /*background-color: gainsboro;*/
-  border: solid lightgrey 1px;
+  border: dashed lightgrey 10px;
   margin: 0 auto;
   width: 800px;
   height: 600px;
 }
 
+.checkButton {
+  font-size: 20px;
+  color: yellowgreen;
+  background-color: white;
+  border: solid yellowgreen 1px;
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  border-radius: 100px;
+}
+
+.giftSelected {
+  line-height: 75px;
+  padding: 4px;
+  Width: 700px;
+  height: 75px;
+}
+
 .giftItem {
+  font-size: 24px;
   height: 100%;
   width: 80%;
 }
@@ -34,6 +62,15 @@ box-sizing: border-box;
 
 }
 
+.itemList {
+  display: inline-block;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 40px;
+  width: 70%
+}
+
 .main {
   background-color: white;
   border: solid lightgrey 2px;
@@ -44,7 +81,7 @@ box-sizing: border-box;
 
 .title {
   display: inline-block;
-  font-family: monospace;
+  font-family: georgia serif;
   font-size: 42px;
   text-align: center;
   width: 100%
@@ -53,10 +90,11 @@ box-sizing: border-box;
 .total {
   border: lightgrey 2px;
   display: inline-block;
+  font-size: 24px;
   float: right;
   line-height: 65px;
-  margin-left: 49px;
+  margin-right: 100px;
   margin-top: 0;
   height: 65px;
-  width: 700px;
+  width: 100px;
 }

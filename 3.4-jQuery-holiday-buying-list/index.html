@@ -15,19 +15,32 @@
           class="giftItem__section">
         <input
           class="giftItem"
+          data-js="giftInput"
           name="post item"
           placeholder="type the gift to buy here">
         <button
           class="giftSubmit"
+          data-js="add"
           type="submit"
           value="post"> ADD </button>
         </form>
 
-        <section>
-          <img src="" alt="">
-          <article class="">
-          </article>
-          <p></p>
+        <section
+          class="giftSelected"
+          data-js="selectionArea">
+
+          <button
+            class="checkButton"
+            data-js="check"
+            type="button"> &#10003 </button>
+          <p class="itemList">
+            Teenage Mutant Ninja Turtles
+          </p>
+          <p
+            class="amount"
+            data-js="amount">
+            $50
+          </p>
         </section>
 
     </main>
