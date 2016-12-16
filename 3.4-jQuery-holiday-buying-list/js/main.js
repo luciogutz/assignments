@@ -19,7 +19,8 @@ $(function(){
         .attr({
           class: "checkButton",
           type: "button"
-        });
+        })
+        .html("&#10003");
 
       var $listItemElement = $("<p>")
         .attr({
@@ -31,14 +32,14 @@ $(function(){
         .attr({
           class: "amount"
         })
-        .text("$45");
+        Math.floor((Math.random() * 100) + 1);
 
       var $giftList = $("<section>")
         .append($checkElement)
         .append($listItemElement)
         .append($amountElement);
 
-        $giftInput.prepend($giftList);
+        $giftListElement.prepend($giftList);
 
 
 
