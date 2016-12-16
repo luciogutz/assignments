@@ -45,7 +45,17 @@ $(function(){
 
         $giftListElement.prepend($giftList);
 
-        var $totalAmount = eval($price);
+        var $totalPrice = 0;
+
+        $("price").each(function($totalPrice){
+
+
+
+        });
+  console.log($totalPrice);
+
+
+
 
         $total.text("$" + $totalAmount);
         // I need to add all ouputs of $price and output it to data-js="total".
