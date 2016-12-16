@@ -32,7 +32,9 @@ $(function(){
         .attr({
           class: "amount"
         })
-        Math.floor((Math.random() * 100) + 1);
+        .text("$" + Math.floor((Math.random() * 100) + 1));
+
+
 
       var $giftList = $("<section>")
         .append($checkElement)
