@@ -28,13 +28,14 @@ $(function(){
         })
         .text($giftInputValue);
 
-      var $addAmount = Math.floor((Math.random() * 1000) + 1);
+      var $price = Math.floor((Math.random() * 1000) + 1);
+
 
       var $amountElement = $("<p>")
         .attr({
           class: "amount"
         })
-        .text("$" + $addAmount);
+        .text("$" + $price);
 
 
       var $giftList = $("<section>")
@@ -44,9 +45,10 @@ $(function(){
 
         $giftListElement.prepend($giftList);
 
-        var $totalAmount = eval($addAmount + $amountElement);
+        var $totalAmount = eval($price);
 
         $total.text("$" + $totalAmount);
+        // I need to add all ouputs of $price and output it to data-js="total".
 
   });
 });

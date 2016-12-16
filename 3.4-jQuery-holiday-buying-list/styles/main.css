@@ -30,6 +30,17 @@ box-sizing: border-box;
   border-radius: 100px;
 }
 
+.finalTotal {
+  float: right;
+  font-size: 24px;
+  vertical-align: top;
+  line-height: 65px;
+  height: 65px;
+  width: 100px;
+  margin: 0;
+  margin-right: 6px;
+}
+
 .giftSelected {
   line-height: 75px;
   padding: 4px;
@@ -99,8 +110,14 @@ box-sizing: border-box;
   font-size: 24px;
   float: right;
   line-height: 65px;
-  margin-right: 100px;
   margin-top: 0;
+  margin-right: 20px;
   height: 65px;
-  width: 100px;
+  width: 50px;
+}
+
+.totalSection {
+  width: 700px;
+  height: 65px;
+  margin-left: 39px;
 }
