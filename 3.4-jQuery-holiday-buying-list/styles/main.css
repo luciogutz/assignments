@@ -13,7 +13,7 @@ box-sizing: border-box;
 
 .body {
   /*background-color: gainsboro;*/
-  border: dashed lightgrey 10px;
+  border: dashed greenyellow 10px;
   margin: 0 auto;
   width: 800px;
   height: 600px;

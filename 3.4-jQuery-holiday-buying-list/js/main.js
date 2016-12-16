@@ -57,7 +57,7 @@ $(function(){
 
 
 
-        $total.text("$" + $totalAmount);
+        // $total.text("$" + $totalAmount);
         // I need to add all ouputs of $price and output it to data-js="total".
 
   });
