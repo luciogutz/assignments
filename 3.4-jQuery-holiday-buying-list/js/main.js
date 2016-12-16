@@ -6,7 +6,7 @@ $(function(){
   var $giftInput = $body.find("[data-js='giftInput']");
   var $addElement = $body.find("[data-js='add']");
   var $giftListElement = $body.find("[data-js='selectionArea']");
-
+  var $total = $body.find("[data-js='total']");
 
 
   $addElement.on("click", function(e){
@@ -28,12 +28,13 @@ $(function(){
         })
         .text($giftInputValue);
 
+      var $addAmount = Math.floor((Math.random() * 1000) + 1);
+
       var $amountElement = $("<p>")
         .attr({
           class: "amount"
         })
-        .text("$" + Math.floor((Math.random() * 100) + 1));
-
+        .text("$" + $addAmount);
 
 
       var $giftList = $("<section>")
@@ -43,7 +44,9 @@ $(function(){
 
         $giftListElement.prepend($giftList);
 
+        var $totalAmount = eval($addAmount + $amountElement);
 
+        $total.text("$" + $totalAmount);
 
   });
 });
