@@ -3,10 +3,9 @@ $(function(){
 
   var $body = $("body");
 
-  var $giftInputElement = $body.find("{data-js='giftInput'}");
-  var $addElement = $body.find("{data-js='add'}");
-  var $selectionAreaElement = $body.find("{data-js='selectionArea'}");
-  var $giftListElement = $body.find("{data-js='selectionArea'}");
+  var $giftInput = $body.find("[data-js='giftInput']");
+  var $addElement = $body.find("[data-js='add']");
+  var $giftListElement = $body.find("[data-js='selectionArea']");
 
 
 
@@ -14,7 +13,7 @@ $(function(){
 
       e.preventDefault();
 
-      var $giftInputValue = $giftInputValue.val();
+      var $giftInputValue = $giftInput.val();
 
       var $checkElement = $("<button>")
         .attr({
@@ -25,19 +24,21 @@ $(function(){
       var $listItemElement = $("<p>")
         .attr({
           class: "itemList"
-        });
+        })
+        .text($giftInputValue);
 
       var $amountElement = $("<p>")
         .attr({
           class: "amount"
-        });
+        })
+        .text("$45");
 
-      var $giftList = ("section")
+      var $giftList = $("<section>")
         .append($checkElement)
         .append($listItemElement)
         .append($amountElement);
 
-        $giftInputElement.append($giftListElement);
+        $giftInput.prepend($giftList);
 
 
 
