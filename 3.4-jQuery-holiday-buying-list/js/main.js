@@ -31,7 +31,7 @@ $(function(){
       var $price = [20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100];
 
       var $randomPriceArray = $price[Math.floor(Math.random() * $price.length)];
-
+      // console.log($randomPriceArray);
 
       var $amountElement = $("<p>")
         .attr({
@@ -47,43 +47,57 @@ $(function(){
 
         $giftListElement.prepend($giftList);
 
-        var $totalPrice = "";
-        var $priceArray = "";
-
-          // Create placeholder variable to hold total price outside of loop
-          // loop over each found instance of price
-      $randomPriceArray.each(function(priceEl){
-        var $randomPriceArray = $(".randomPriceArray");
-        $priceArray += $randomPriceArray.text;
-
-            console.log($priceArray);
+        var totalPrice = "";
+        var priceArray = "";
 
 
-          })
+        
+          // var priceElement = $(".$randomPriceArray");
 
+  //
+  //
+  //
+  //
+            // console.log(totalPrice);
+  //
+  //
 
-          // $.each($randomPriceArray, function(priceEl){
+  //
+  // //         var totalString = "";
+  // //  var totalPrice = "";
+  // //  $priceElement.each(function(priceElement){
+  //   //  var priceElement = $(".priceElement");
+  //    totalString += priceElement.text();
+  //    var input = totalString;
+  //    var numbers = input.split("$");
+  //    var numberString = numbers.join("+");
+  //    var totalOfEval = eval(numberString)
+  //    totalPrice = totalOfEval;
+  //  });
+  //  $totalElement.text(totalPrice);
+  //
+  //         // $.each($randomPriceArray, function(priceEl){
+  //
+  //
+  //           // })
+  //
+  //           // console.log($priceEl);
+  //     		// wrap priceEl in a jquery factory call
+  //     		// grab each .val() of each wrapped $priceEl
+  //     		// add and reassign placeholder totalPrice
+  //
+  // // Have reference to total price element
+  // // Set total price to totalPriceElement reference
+  // // $.each($price, function(){
+  //
+  //
+  // // console.log($sum);
+  //
+  //
+  //
+  //
+  //       // $total.text("$" + $totalAmount);
 
-
-            // })
-
-            // console.log($priceEl);
-      		// wrap priceEl in a jquery factory call
-      		// grab each .val() of each wrapped $priceEl
-      		// add and reassign placeholder totalPrice
-
-  // Have reference to total price element
-  // Set total price to totalPriceElement reference
-  // $.each($price, function(){
-
-
-  // console.log($sum);
-
-
-
-
-        // $total.text("$" + $totalAmount);
-        // I need to add all ouputs of $price and output it to data-js="total".
 
   });
 });
