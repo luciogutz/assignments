@@ -28,14 +28,16 @@ $(function(){
         })
         .text($giftInputValue);
 
-      var $price = Math.floor((Math.random() * 1000) + 1);
+      var $price = [20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100];
+
+      var $randomPriceArray = $price[Math.floor(Math.random() * $price.length)];
 
 
       var $amountElement = $("<p>")
         .attr({
           class: "amount"
         })
-        .text("$" + $price);
+        .text("$" + $randomPriceArray);
 
 
       var $giftList = $("<section>")
@@ -45,14 +47,37 @@ $(function(){
 
         $giftListElement.prepend($giftList);
 
-        var $totalPrice = 0;
+        var $totalPrice = "";
+        var $priceArray = "";
 
-        $("price").each(function($totalPrice){
+          // Create placeholder variable to hold total price outside of loop
+          // loop over each found instance of price
+      $randomPriceArray.each(function(priceEl){
+        var $randomPriceArray = $(".randomPriceArray");
+        $priceArray += $randomPriceArray.text;
+
+            console.log($priceArray);
 
 
+          })
 
-        });
-  console.log($totalPrice);
+
+          // $.each($randomPriceArray, function(priceEl){
+
+
+            // })
+
+            // console.log($priceEl);
+      		// wrap priceEl in a jquery factory call
+      		// grab each .val() of each wrapped $priceEl
+      		// add and reassign placeholder totalPrice
+
+  // Have reference to total price element
+  // Set total price to totalPriceElement reference
+  // $.each($price, function(){
+
+
+  // console.log($sum);
 
 
 
