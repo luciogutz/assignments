@@ -5,7 +5,7 @@
 .albums {
   border: solid black 1px;
   display: inline-block;
-  height: 300px;
+  height: auto;
   margin-top: 20px;
   width: 225px;
 }
@@ -25,11 +25,11 @@
   margin-right: 50px;
 }
 
-.albumCover {
+.albumImg {
   display: inline;
   margin-top: 0;
   margin-bottom: 0;
-  height: 250px;
+  height: 200px;
   width: 100%;
 }
 
