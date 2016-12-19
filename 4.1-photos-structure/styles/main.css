@@ -6,7 +6,23 @@
   border: solid black 1px;
   display: inline-block;
   height: 300px;
+  margin-top: 20px;
   width: 225px;
+}
+.album1 {
+  margin-right: 50px;
+}
+
+.album2 {
+  margin-right: 50px;
+}
+
+.album4 {
+  margin-right: 50px;
+}
+
+.album5 {
+  margin-right: 50px;
 }
 
 .albumCover {
@@ -14,23 +30,24 @@
   margin-top: 0;
   margin-bottom: 0;
   height: 250px;
-  width: 225px;
+  width: 100%;
 }
 
 .albumSlots {
   background-color: black;
   color: white;
   display: inline-block;
-  height: 45px;
-  line-height: 45px;
-  margin-top: 0;
+  font-size: 24px;
+  height: 48px;
+  line-height: 48px;
+  margin-top: -4px;
   margin-bottom: 0;
   text-align: center;
   width: 223px;
 }
 
 .albumWrapper {
-  margin-left: 100px;
+  margin-left: 50px;
   margin-bottom: 100px;
 }
 
