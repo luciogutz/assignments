@@ -55,6 +55,18 @@
 .albumWrapper {
 }
 
+.aside {
+  height: 600px;
+  width: 100px;
+  display: inline-block;
+}
+
+.aside__section {
+  display: inline-block;
+  height: 600px;
+  width: 100px;
+}
+
 body {
     background-image: url("https://static.pexels.com/photos/107956/pexels-photo-107956.jpeg")
 }
@@ -89,7 +101,13 @@ h1 {
   width: 898px;
   position: absolute;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.8;
+}
+
+.wrapper__collection {
+  border: solid black 2px;
+  width: 900px;
+  margin: auto; 
 }
 
 .wrapper {
