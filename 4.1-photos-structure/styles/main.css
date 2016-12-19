@@ -1,4 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: silver;
+  border: solid black 2px;
+  border-bottom: solid black 3px;
+  color: white;
+  font-family: Helvetica;
+  font-size: 42px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+
+
+}
+
 .wrapper {
-  margin: 0, auto;
+  margin: 0 auto;
   border: solid black 2px;
 }
