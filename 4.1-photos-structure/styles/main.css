@@ -2,6 +2,38 @@
   box-sizing: border-box;
 }
 
+.albums {
+  border: solid black 1px;
+  display: inline-block;
+  height: 300px;
+  width: 225px;
+}
+
+.albumCover {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 250px;
+  width: 225px;
+}
+
+.albumSlots {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  width: 223px;
+}
+
+.albumWrapper {
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+
 .header {
   background-color: silver;
   border: solid black 2px;
@@ -14,11 +46,10 @@
   text-align: center;
   margin-top: 0;
   width: 100%;
-
-
 }
 
 .wrapper {
-  margin: 0 auto;
   border: solid black 2px;
+  margin: auto;
+  width: 900px;
 }
