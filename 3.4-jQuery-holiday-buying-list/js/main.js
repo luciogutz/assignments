@@ -14,6 +14,9 @@ $(function(){
       e.preventDefault();
 
       var $giftInputValue = $giftInput.val();
+      var $giftInputArray = $giftInputValue.split(",");
+      var $giftTextItem = $giftInputArray[0];
+      var $giftTextAmount = $giftInputArray[1];
 
       var $checkElement = $("<button>")
         .attr({
@@ -22,76 +25,48 @@ $(function(){
         })
         .html("&#10003");
 
-      var $listItemElement = $("<p>")
+      $giftTextItem = $("<p>")
         .attr({
           class: "itemList"
         })
-        .text($giftInputValue);
+        .text($giftTextItem);
 
-      var $price = [20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100];
-
-      var $randomPriceArray = $price[Math.floor(Math.random() * $price.length)];
-      // console.log($randomPriceArray);
-
-      var $amountElement = $("<p>")
+      $giftTextAmount = $("<p>")
         .attr({
           class: "amount"
         })
-        .text("$" + $randomPriceArray);
+        .text("$" + $giftTextAmount);
 
 
       var $giftList = $("<section>")
         .append($checkElement)
-        .append($listItemElement)
-        .append($amountElement);
+        .append($giftTextItem)
+        .append($giftTextAmount);
 
         $giftListElement.prepend($giftList);
 
         var totalPrice = "";
-        var priceArray = "";
+        var stringAmount = "";
+        $giftTextAmount.each(function(giftTextAmount){
+          var giftTextAmount = $(".giftTextAmount");
+          stringAmount += $giftTextAmount.text();
+          var input = stringAmount;
+          var amount = input.split("$");
+          var joinAmount = amount.join("+");
+          var amountSum = eval(joinAmount);
+          totalPrice += amountSum;
+          console.log(amountSum);
+        });
+        $total.text(totalPrice);
+//
 
 
-        
-          // var priceElement = $(".$randomPriceArray");
+  //       $body.on("click", "[data-js='circle']", function(){
+  // var $this = $(this);
+  // $this.siblings().addClass("lineThrough");
+  // $this.html("&#10003");
 
-  //
-  //
-  //
-  //
-            // console.log(totalPrice);
-  //
-  //
 
-  //
-  // //         var totalString = "";
-  // //  var totalPrice = "";
-  // //  $priceElement.each(function(priceElement){
-  //   //  var priceElement = $(".priceElement");
-  //    totalString += priceElement.text();
-  //    var input = totalString;
-  //    var numbers = input.split("$");
-  //    var numberString = numbers.join("+");
-  //    var totalOfEval = eval(numberString)
-  //    totalPrice = totalOfEval;
-  //  });
-  //  $totalElement.text(totalPrice);
-  //
-  //         // $.each($randomPriceArray, function(priceEl){
-  //
-  //
-  //           // })
-  //
-  //           // console.log($priceEl);
-  //     		// wrap priceEl in a jquery factory call
-  //     		// grab each .val() of each wrapped $priceEl
-  //     		// add and reassign placeholder totalPrice
-  //
-  // // Have reference to total price element
-  // // Set total price to totalPriceElement reference
-  // // $.each($price, function(){
-  //
-  //
-  // // console.log($sum);
   //
   //
   //
