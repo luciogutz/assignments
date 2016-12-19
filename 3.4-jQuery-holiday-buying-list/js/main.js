@@ -56,21 +56,20 @@ $(function(){
           // var joinAmount = amount.join("+");
           var amountSum = eval(amount.join("+"));
           totalAmount = amountSum;
-          // console.log(joinAmount);
         });
-        $total.text(totalAmount);
-//
+        $total.text("$" + totalAmount);
+console.log(totalAmount)
 
   $body.on("click", "[data-js='checkMark']", function(){
     var $this = $(this);
     $this.siblings().addClass("removeItem");
     $this.html("&#10003");
     });
-  $body.on("dblclick", $giftInput, function(){
-    var $this = $(this);
-    var clear = $this.empty();
-  });
-  console.log(clear);
+  // $body.on("dblclick", $giftInput, function(){
+  //   var $this = $(this);
+  //   var clear = $this.empty();
+  // });
+
 
 
 

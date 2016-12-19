@@ -99,6 +99,7 @@ box-sizing: border-box;
 .removeItem {
   text-decoration: line-through;
   color: yellowgreen;
+  vertical-align: middle;
 }
 
 .title {
