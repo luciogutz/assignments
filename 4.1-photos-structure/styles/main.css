@@ -10,7 +10,9 @@
   width: 225px;
 }
 .album1 {
+  margin-top: 50px;
   margin-right: 50px;
+  margin-left: 55px;
 }
 
 .album2 {
@@ -18,7 +20,10 @@
 }
 
 .album4 {
+  margin-top: 40px;
   margin-right: 50px;
+  margin-left: 55px;
+  margin-bottom: 100px;
 }
 
 .album5 {
@@ -34,10 +39,11 @@
 }
 
 .albumSlots {
-  background-color: black;
-  color: white;
+  background-color: lightgrey;
+  color: blue;
   display: inline-block;
   font-size: 24px;
+  font-style: oblique;
   height: 48px;
   line-height: 48px;
   margin-top: -4px;
@@ -47,22 +53,43 @@
 }
 
 .albumWrapper {
-  margin-left: 50px;
-  margin-bottom: 100px;
+}
+
+body {
+    background-image: url("https://static.pexels.com/photos/107956/pexels-photo-107956.jpeg")
+}
+h1 {
+  background-image: url("http://api.thumbr.it/whitenoise-900x100.png?background=bfc5c7ff&noise=ffff05&density=100&opacity=80");
 }
 
 .header {
   background-color: silver;
   border: solid black 2px;
   border-bottom: solid black 3px;
-  color: white;
+  color: black;
   font-family: Helvetica;
   font-size: 42px;
   height: 100px;
   line-height: 100px;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 0;
   width: 100%;
+}
+
+.header__image {
+  overflow: hidden;
+  width: 900px;
+  z-index: -1;
+}
+
+.image {
+  overflow: hidden;
+  height: 694px;
+  width: 898px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.7;
 }
 
 .wrapper {
