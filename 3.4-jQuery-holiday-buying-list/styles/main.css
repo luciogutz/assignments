@@ -96,6 +96,11 @@ box-sizing: border-box;
   height: 318px;
 }
 
+.removeItem {
+  text-decoration: line-through;
+  color: yellowgreen;
+}
+
 .title {
   display: inline-block;
   font-family: georgia serif;

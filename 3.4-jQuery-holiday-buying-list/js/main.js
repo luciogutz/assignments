@@ -21,9 +21,10 @@ $(function(){
       var $checkElement = $("<button>")
         .attr({
           class: "checkButton",
-          type: "button"
+          type: "button",
+          "data-js": "checkMark"
         })
-        .html("&#10003");
+        .html("");
 
       $giftTextItem = $("<p>")
         .attr({
@@ -45,33 +46,33 @@ $(function(){
 
         $giftListElement.prepend($giftList);
 
-        var totalPrice = "";
+        var totalAmount = "";
         var stringAmount = "";
         $giftTextAmount.each(function(giftTextAmount){
           var giftTextAmount = $(".giftTextAmount");
           stringAmount += $giftTextAmount.text();
           var input = stringAmount;
           var amount = input.split("$");
-          var joinAmount = amount.join("+");
-          var amountSum = eval(joinAmount);
-          totalPrice += amountSum;
-          console.log(amountSum);
+          // var joinAmount = amount.join("+");
+          var amountSum = eval(amount.join("+"));
+          totalAmount = amountSum;
+          // console.log(joinAmount);
         });
-        $total.text(totalPrice);
+        $total.text(totalAmount);
 //
 
+  $body.on("click", "[data-js='checkMark']", function(){
+    var $this = $(this);
+    $this.siblings().addClass("removeItem");
+    $this.html("&#10003");
+    });
+  $body.on("dblclick", $giftInput, function(){
+    var $this = $(this);
+    var clear = $this.empty();
+  });
+  console.log(clear);
 
-  //       $body.on("click", "[data-js='circle']", function(){
-  // var $this = $(this);
-  // $this.siblings().addClass("lineThrough");
-  // $this.html("&#10003");
 
-
-  //
-  //
-  //
-  //
-  //       // $total.text("$" + $totalAmount);
 
 
   });
