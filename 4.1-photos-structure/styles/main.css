@@ -3,7 +3,6 @@
 }
 
 .albums {
-  border: solid black 1px;
   display: inline-block;
   height: auto;
   margin-top: 20px;
@@ -49,22 +48,43 @@
   margin-top: -4px;
   margin-bottom: 0;
   text-align: center;
-  width: 223px;
+  width: 226px;
 }
 
 .albumWrapper {
 }
 
 .aside {
-  height: 600px;
-  width: 100px;
   display: inline-block;
+  height: 600px;
+  margin-left: 14%;
+  width: 290px;
+
 }
 
 .aside__section {
+  background-color: black;
   display: inline-block;
-  height: 600px;
-  width: 100px;
+  height: 795px;
+  width: 300px;
+}
+
+.buttons {
+  background-color: lightgrey;
+  border-radius: 6px;
+  border-color: gold;
+  color: blue;
+  font-size: 24px;
+  font-style: oblique;
+  height: 50px;
+  width: 90%;
+  margin-top: 17%;
+  margin-left: 5%;
+
+}
+
+.button1{
+  margin-top: 137px;
 }
 
 body {
@@ -80,7 +100,7 @@ h1 {
   border-bottom: solid black 3px;
   color: black;
   font-family: Helvetica;
-  font-size: 42px;
+  font-size: 60px;
   height: 100px;
   line-height: 100px;
   text-align: center;
@@ -106,8 +126,10 @@ h1 {
 
 .wrapper__collection {
   border: solid black 2px;
+  float: right;
   width: 900px;
-  margin: auto; 
+  margin-right: 15%;
+  margin-left: 0;
 }
 
 .wrapper {
