@@ -1,0 +1,12 @@
+CheckList
+- [X]  Make the checklist
+- [X]  Create HTML
+- [X]  Link the script tag
+- [X]  Link the CSS
+- [X]  Install jQuery with NPM
+- [X]  Install webpack with NPM
+- [X]  Research how to configure webpack
+- [X]  Install webpack CLI
+- [X]  Rename JS folder
+- [X]  Configure webpack
+- []  Hook webpack CLI into package json....??
