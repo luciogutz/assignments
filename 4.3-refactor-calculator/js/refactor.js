@@ -1,16 +1,13 @@
 var $ = require("jquery");
 
 $(function(){
+  var $this = $("this");
+  var $body = $("body");
+  var $outputElement = $body.find("[data-js='output']");
+  var $exponentElement = $body.find("[data-js='exponent']");
 
-var $body = $("body");
-var $calculatorElement = $body.find("[data-js='calculator']");
-var $exponentElement = $body.find("[data-js='exponent']");
-var $outputElement = $body.find("[data-js='output']");
+  $calculatorElement.on("click", function(e){
 
-$calculatorElement.on("click", function(e){
-   var concatExponents += $outputElement;
-   
-console.log(concatExponents);
-});
 
+  });
 });
