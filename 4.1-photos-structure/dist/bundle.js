@@ -10297,13 +10297,23 @@
 	  var $button4 = $body.find("[data-js='button4']");
 	  var $button5 = $body.find("[data-js='button5']");
 	  var $button6 = $body.find("[data-js='button6']");
+	  var $imgAlbum1 = $body.find("[data-js='imgAlbum1']");
+	  var $modalImg = $body.find("[data-js='modalImg']");
 
 	  // functions for album 1
 	  $button1.on("click", function(e){
 	    $modal.removeClass("hidden");
+	    var $albumImg1 = $("<img>")
+	      .attr({
+	        alt: "yoda",
+	        class: "imgPage3",
+	        src: "http://www.sideshowtoy.com/photo.php?sku=400302"
+	      })
+	    var imgModal1 = $modal.append($albumImg1);
 	  });
 	  $backButton.on("click", function(e){
 	    $modal.addClass("hidden");
+	    $albumImg1.remove();
 	  });
 
 	  // functions for album 2
