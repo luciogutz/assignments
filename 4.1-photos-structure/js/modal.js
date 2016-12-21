@@ -1,6 +1,7 @@
 var $ = require("jquery");
 
 $(function(){
+  var $this = $("this");
   var $body = $("body");
   var $modal = $body.find("[data-js='modal1']");
   var $backButton = $body.find("[data-js='backButton']");
@@ -21,12 +22,11 @@ $(function(){
         alt: "yoda",
         class: "imgPage3",
         src: "http://www.sideshowtoy.com/photo.php?sku=400302"
-      })
+      });
     var imgModal1 = $modal.append($albumImg1);
   });
   $backButton.on("click", function(e){
-    $modal.addClass("hidden");
-    $albumImg1.remove();
+    $modal.addClass("hidden")
   });
 
   // functions for album 2
