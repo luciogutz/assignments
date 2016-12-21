@@ -37,6 +37,10 @@
   width: 100%;
 }
 
+.albumImg__modal {
+  width: 350px;
+}
+
 .albumSlots {
   background-color: lightgrey;
   color: blue;
@@ -74,12 +78,12 @@
 .backButton {
   border: solid yellow 2px;
   color: blue;
-  font-size: 14px;
+  font-size: 8px;
   font-family: Helvetica;
   vertical-align: top;
   border-radius: 4px;
   height: 30px;
-  width: 175px;
+  width: 100px;
   margin: 4%
 }
 
@@ -134,6 +138,22 @@ h1 {
   width: 100%;
 }
 
+.header__modal {
+  background-color: silver;
+  border: solid black 2px;
+  border-bottom: solid black 3px;
+  color: black;
+  font-family: Helvetica;
+  font-size: 30px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 350px;
+
+}
+
 .header__image {
   overflow: hidden;
   width: 900px;
@@ -152,30 +172,38 @@ h1 {
 
 .imgPage3 {
   border: solid white 2px;
-  width: 400px;
-  height: 400px;
-  margin: 0 21%;
+  width: 350px;
+  height: 350px;
+  margin: 0;
+}
+
+.notHidden {
+  width: 350px;
+  height: 350px;
+  z-index: 1;
+  position: fixed;
+  padding-left: 165px;
+  padding-top: 75px;
+  margin-top: -180px;
+  margin-left: 100px;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
 }
 
 .hidden {
   display: none;
 }
 
-.not__hidden {
-  display: block;
-  z-index: 1;
-  position: fixed;
+.wrapper {
+  width: 700px;
+  height: 100%;
+  margin-left: -109px;
+  margin-top: -337px;
 }
 
 .wrapper__collection {
-  border: solid black 2px;
   float: right;
   width: 700px;
   margin-right: 14%;
   margin-left: 0;
-}
-
-.wrapper {
-  margin: auto;
-  width: 700px;
 }
