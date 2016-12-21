@@ -20,5 +20,10 @@ setting up js files and html files to start refactoring
 - [x] change script of html to "dist/bundles.js"
 - [x] find data-js reference to all buttons in calculator
 - [x] create .find global data-js html reference
-- [ ] make reference to all exponents
-- [ ] 
+- [x] make reference to all exponents
+- [x] create click event for exponents
+- [ ] need for numbers to eval once the equals sign is pressed
+- [ ] need numbers to concat in input section.
+- [ ] once numbers are concatenated, i need for the numbers to eval and output
+      new value.
+- [ ] also need clear button to remove all inputs
