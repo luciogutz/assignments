@@ -157,6 +157,16 @@ h1 {
   margin: 0 21%;
 }
 
+.hidden {
+  display: none;
+}
+
+.not__hidden {
+  display: block;
+  z-index: 1;
+  position: fixed;
+}
+
 .wrapper__collection {
   border: solid black 2px;
   float: right;
