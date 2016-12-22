@@ -210,8 +210,7 @@
 	    var $clickedExponentElement = $(this);
 	    var currentOutputString = $outputElement.text();
 	    var numberClickedString = $clickedExponentElement.text();
-	    var totalNumber = currentOutputString + numberClickedString;
-	    $outputElement.text(totalNumber);
+	    $outputElement.text(currentOutputString + numberClickedString);
 	    console.log(currentOutputString);
 	  });
 	  $equals.on("click", function(e){
