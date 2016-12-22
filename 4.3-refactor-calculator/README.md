@@ -22,8 +22,8 @@ setting up js files and html files to start refactoring
 - [x] create .find global data-js html reference
 - [x] make reference to all exponents
 - [x] create click event for exponents
-- [ ] need for numbers to eval once the equals sign is pressed
-- [ ] need numbers to concat in input section.
+- [x] need for numbers to eval once the equals sign is pressed
+- [x] need numbers to concat in input section.
 - [ ] once numbers are concatenated, i need for the numbers to eval and output
       new value.
 - [ ] also need clear button to remove all inputs

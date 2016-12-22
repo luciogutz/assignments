@@ -4,7 +4,7 @@ $(function(){
   var $body = $("body");
   var $outputElement = $body.find("[data-js='output']");
   var $exponentElements = $body.find("[data-js='exponent']");
-  var $equals = $body.find("[data-js='equal']");
+  var $equals = $body.find("[data-js='equals']");
 
   $exponentElements.on("click", function(e){
     var $clickedExponentElement = $(this);
@@ -14,9 +14,9 @@ $(function(){
 
   });
   $equals.on("click", function(e){
-    var $equals = eval($outputElement);
-    $outputElement.text($equals);
-      console.log($equals);
+    var total = eval($outputElement.text());
+        $outputElement.text(total);
   });
+
 
 });
