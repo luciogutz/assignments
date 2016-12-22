@@ -12,7 +12,6 @@ $(function(){
     var currentOutputString = $outputElement.text();
     var numberClickedString = $clickedExponentElement.text();
     $outputElement.text(currentOutputString + numberClickedString);
-    console.log(currentOutputString);
   });
   $equals.on("click", function(e){
     var total = eval($outputElement.text());
