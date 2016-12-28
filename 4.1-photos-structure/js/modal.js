@@ -1,7 +1,7 @@
 var $ = require("jquery");
 
 $(function(){
-  var $this = $("this");
+  // var $this = $("this");
   var $body = $("body");
   var $modal = $body.find("[data-js='modal']");
   var $backButton = $body.find("[data-js='backButton']");
@@ -16,8 +16,10 @@ $(function(){
     var $clickedThumbnailContainerElements = $(this);
     var $clickedThumbnailImageElements = $clickedThumbnailContainerElements.find("[data-js='albumImg']")
     var sourceOfClickedThumbnailImage = $clickedThumbnailImageElements.attr("src");
+    var altOfClickedThumbnailImage = $clickedThumbnailImageElements.attr("alt");
 
     $modalImgElement.attr("src", sourceOfClickedThumbnailImageElement);
+    $modalImgElement.attr("alt", altOfClickedThumbnailImage);
 
     // var $albumImg1 = $("<img>")
     //   .attr({
