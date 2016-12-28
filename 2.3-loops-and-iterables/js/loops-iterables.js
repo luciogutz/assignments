@@ -79,43 +79,40 @@ console.assert(capitalizeAll('every day is like sunday.') === 'Every Day Is Like
 var paragraph = 'it was a fine morning. the wine was good. light slanted in through the cafe window.'
 
 
-function properSentences(paragraph){
-    var paragraphArray = paragraph.split(". ");
-
-    for (var i = 0; i < paragraphArray.length; i++){
-        var currentSentence = paragraphArray[i];
-        var noFirstLetterSentence = currentSentence.slice(1)
-        var capFirstLetter = currentSentence[0].toUpperCase();
-
-        var capParagraph = capFirstLetter + noFirstLetterSentence;
-        // console.log(capParagraph);
-        // I was able to achieve the deesired output, but im sure I need an if statement
-    }
-      return capParagraph;
-}
-
-
-console.assert(properSentences(paragraph) === "It was a fine morning. The wine was good. Light slanted in through the cafe window.")
+// function properSentences(paragraph){
+//     var paragraphArray = paragraph.split(". ");
+//
+//
+//     for (var i = 0; i < paragraphArray.length; i++){
+//         if (i !== paragraphArray.length -1) {
+//           paragraphArray[i] = paragraphArray.charAt(0).toUpperCase() + paragraphArray.splice(1) + ". ";
+//         }else{
+//           paragraphArray[i = paragraphArray.charAt(0).toUpperCase() + paragraphArray.splice(1)
+//         }
+//     }
+//     paragraphArray = paragraphArray.join("");
+//     return paragraphArray;
+// }
+//
+//
+// console.assert(properSentences(paragraph) === "It was a fine morning. The wine was good. Light slanted in through the cafe window.")
 
 // PART 4: write a function called iPutTheFunIn(). It should take a string as input. The output should be a copy of the original string with the word 'fun' inserted into the center of the string.
 
-// function iPutTheFunIn(text){
-//
-//       var textArray = text.split("");
-//       var fun = "fun";
-//       for (var i = 0; i < textArray.length; i++){
-//
-//               var currentText = textArray[i];
-//              var findMiddle = currentText/2;
+function iPutTheFunIn(text){
 
-// I give up for tonight...
-// console.log(insertFun);
-      // }
+      var textArray = text.split("");
+      var fun = "fun";
+      for (var i = 0; i < textArray.length; i++){
 
-// }
+         var findMiddle = Math.floor(textArray.length/2);
+
+         var textArray = textArray.splice(findMiddle,0,fun);
+
+      }
 
 
-
+}
 
 
 console.assert(iPutTheFunIn("funerary") === "funefunrary")
