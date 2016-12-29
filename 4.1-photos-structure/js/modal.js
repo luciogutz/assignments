@@ -17,7 +17,7 @@ $(function(){
     var $clickedThumbnailImageElements = $clickedThumbnailContainerElements.find("[data-js='albumImg']")
     var sourceOfClickedThumbnailImage = $clickedThumbnailImageElements.attr("src");
     var altOfClickedThumbnailImage = $clickedThumbnailImageElements.attr("alt");
-
+    //
     $modalImgElement.attr("src", sourceOfClickedThumbnailImageElement);
     $modalImgElement.attr("alt", altOfClickedThumbnailImage);
 
