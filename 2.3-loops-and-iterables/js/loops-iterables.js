@@ -77,24 +77,39 @@ console.assert(capitalizeAll('every day is like sunday.') === 'Every Day Is Like
 // PART 3: write a function called properSentences(). It should take as input a string and capitalize the first letter of every sentence in that string. (For our purposes, all sentences will end with periods. Write one that works with ? and ! and receive a gratifying high five, right on the hand!)
 
 var paragraph = 'it was a fine morning. the wine was good. light slanted in through the cafe window.'
-
-
+//
+//
 function properSentences(paragraph){
-    var paragraphArray = paragraph.split(". ");
+  var paragraphArray = paragraph.split(". ");
+  var capSentence = "";
+  for(var i = 0; i < paragraphArray.length; i++){
+    var currentParagraphArray = paragraphArray[i];
+    var noFirstLetter = currentParagraphArray.slice(1);
+    var firstLetter = currentParagraphArray.slice(0,1);
+    var capFirstLetter = firstLetter.toUpperCase();
+    var properSentence = capFirstLetter + noFirstLetter;
+    // figure out what is going on here.
+    var finalParagraph = properSentence.prototype.slice.call();
+    console.log(finalParagraph);
+  }
 
 
-    for (var i = 0; i < paragraphArray.length; i++){
-        if (i !== paragraphArray.length -1) {
-          paragraphArray[i] = paragraphArray.charAt(0).toUpperCase() + paragraphArray.splice(1) + ". ";
-        }else{
-          paragraphArray[i] = paragraphArray.charAt(0).toUpperCase() + paragraphArray.splice(1)
-        }
-    }
-    paragraphArray = paragraphArray.join("");
-    return paragraphArray;
+
+
+//
+//
+//     for (var i = 0; i < paragraphArray.length; i++){
+//         if (i !== paragraphArray.length -1) {
+//           paragraphArray[i] = paragraphArray.charAt(0).toUpperCase() + paragraphArray.splice(1) + ". ";
+//         }else{
+//           paragraphArray[i] = paragraphArray.charAt(0).toUpperCase() + paragraphArray.splice(1)
+//         }
+//     }
+//     paragraphArray = paragraphArray.join("");
+//     return paragraphArray;
 }
-
-
+//
+//
 console.assert(properSentences(paragraph) === "It was a fine morning. The wine was good. Light slanted in through the cafe window.")
 
 // PART 4: write a function called iPutTheFunIn(). It should take a string as input. The output should be a copy of the original string with the word 'fun' inserted into the center of the string.
@@ -106,7 +121,6 @@ function iPutTheFunIn(text){
 
         var findMiddle = Math.floor(textArray.length/2);
         var fun = text.slice(0, findMiddle) + "fun" +text.slice(findMiddle);
-        console.log(fun);
 
           return fun;
       }
