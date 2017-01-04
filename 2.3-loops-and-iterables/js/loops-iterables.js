@@ -89,7 +89,8 @@ function properSentences(paragraph){
     var capFirstLetter = firstLetter.toUpperCase();
     var properSentence = capFirstLetter + noFirstLetter;
     // figure out what is going on here.
-    var finalParagraph = properSentence.prototype.slice.call();
+    var finalParagraph = properSentence.prototype.join(""
+    );
     console.log(finalParagraph);
   }
 

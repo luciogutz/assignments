@@ -8,19 +8,18 @@ $(function(){
   var $modalImgElement = $body.find("[data-js='modalImg']");
   var $thumbnailContainerElements = $body.find("[data-js='thumbnailContainer']");
   var $imgButton = $body.find("[data-js='button1']");
-
   // functions for album 1
   $thumbnailContainerElements.on("click", function(e){
     $modal.removeClass("hidden");
+
 
     var $clickedThumbnailContainerElements = $(this);
     var $clickedThumbnailImageElements = $clickedThumbnailContainerElements.find("[data-js='albumImg']")
     var sourceOfClickedThumbnailImage = $clickedThumbnailImageElements.attr("src");
     var altOfClickedThumbnailImage = $clickedThumbnailImageElements.attr("alt");
     //
-    $modalImgElement.attr("src", sourceOfClickedThumbnailImageElement);
+    $modalImgElement.attr("src", sourceOfClickedThumbnailImage);
     $modalImgElement.attr("alt", altOfClickedThumbnailImage);
-
     // var $albumImg1 = $("<img>")
     //   .attr({
     //     alt: "yoda",
