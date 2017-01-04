@@ -12,7 +12,7 @@ describe("newName", function(){
 
   describe("hello", function(){
     it("should say hello", function(){
-      expect(newName.helloElement.innerHTML).tobe("hello")
+      expect(newName.helloElement.innerHTML).toBe("hello")
     })
   })
 });
