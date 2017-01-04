@@ -4,6 +4,15 @@ describe("newName", function(){
 
   var newName;
   var jsdom = require("jsdom");
-  
-  document = jsdom.jsdom(<h1> "Hello" </h1>)
+  beforeEach(function(){
+    document = jsdom.jsdom(`<h1 data-js="hello"> "Hello" </h1>`)
+    window = document.defaultView;
+    newName = require("../js/newFile.js");
+  });
+
+  describe("hello", function(){
+    it("should say hello", function(){
+      expect(newName.helloElement.innerHTML).tobe("hello")
+    })
+  })
 });
