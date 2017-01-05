@@ -6,8 +6,12 @@
 // We'll do it together in class.
 
 // Part EXAMPLE
-
 // Write a function called addOne() that returns the input number, plus one.
+function addOne(num1){
+  var plusOne = num1 + 1;
+  return plusOne;
+};
+
 
 console.assert(addOne(1) === 2)
 
@@ -17,6 +21,7 @@ console.assert(addOne(1) === 2)
 
 var doubleNum = function(num) {
     var newNum = num * 2
+    return newNum;
 }
 
 console.assert(doubleNum(5) === 10)
@@ -28,6 +33,10 @@ console.assert(doubleNum(5) === 10)
  * Write a function called sum that takes two numbers as
  * inputs and computes the sum of those two numbers.
  */
+ function sum(num1, num2){
+   var numberSum = num1 + num2;
+     return numberSum;
+ }
 
 
 console.assert(sum(8, 11) === 19);
@@ -39,18 +48,29 @@ console.assert(sum(4, 100) === 104);
 // as inputs and returns the average of the two. To avoid
 // repeating yourself, use your sum function inside
 // of your average function.
+function average(num1, num2){
+  var numberAvg = (num1 + num2)/2;
+  return numberAvg;
+};
+
 
 
 console.assert(average(8,12) === 10)
 console.assert(average(100,200) === 150)
-
 /**
  * PART 3
  *
  * Modify your sum function so that if either of its
  inputs is not a number, it will return "null."
  */
-
+ function sum(num1, num2){
+  var numberSum = num1 + num2;
+  if(Number.isInteger(num1||num2)===false){
+    return null;
+  }else{
+    return numberSum;
+  }
+ }
 
 console.assert(sum(867, 5309) === 6176);
 console.assert(sum('867', 5309) === null);
@@ -62,6 +82,14 @@ console.assert(sum(true, 5) === null);
 // Write a function called isNegative that will tell
 // whether a number is negative or not.
 
+function isNegative(num){
+  if(num < 0){
+    return true;
+  }else{
+    return false;
+  }
+}
+
 console.assert(isNegative(10) === false)
 console.assert(isNegative(0) === false)
 console.assert(isNegative(-999) === true)
@@ -72,6 +100,14 @@ console.assert(isNegative(-999) === true)
 // To avoid repeating yourself, use your isNegative
 // function inside your sum funciton ***
 
+function sum(num1, num2){
+  var numberSum = num1 + num2;
+  if(isNegative(num1) || isNegative(num2)){
+    return null;
+  }else{
+    return numberSum;
+  }
+}
 console.assert(sum(5,-5) === null)
 
 
@@ -80,6 +116,18 @@ console.assert(sum(5,-5) === null)
 // Write a function that will find the minimum of four
 // input numbers. You can do it using nested if statements,
 // boolean operators, or both (but not neither).
+function minimum(a,b,c,d){
+  if(a < b && a < c && a < d){
+    return a;
+  }else if(b < a && b < c && b < d){
+    return b;
+  }else if(c < a && c < b && c < d){
+    return c;
+  }else{
+    return d;
+  }
+}
+
 
 console.assert(minimum(1,2,4,0) === 0)
 console.assert(minimum(1000,-2,-99,50) === -99)
@@ -92,6 +140,19 @@ console.assert(minimum(1000,-2,99,50) === -2)
 // Using logical operators, write a function that will
 // return true if either input is a string, but not
 // both or neither.
+
+function justOneString(str1, str2){
+  if(typeof str1  === 'string' || typeof str2  === 'string'){
+    return true;
+  } else if(typeof str1 === 'string' && typeof str2  === 'string'){
+    return false;
+  } else if(typeof str1  != 'string' && typeof str2  != 'string'){
+    return false;
+  }else{
+    return false;
+  }
+ }
+
 
 console.assert(justOneString('a',5) === true)
 console.assert(justOneString(6,'dotron') === true)
@@ -147,7 +208,8 @@ var factory = function() {
     var innerFunc = function() {
         console.log('hello world')
     }
-    return innerFunc}
+    return innerFunc
+  }
 
 
 console.assert(factory()() === 'hello world')  // INCEPTION!
