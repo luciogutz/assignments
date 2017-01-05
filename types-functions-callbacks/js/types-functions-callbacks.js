@@ -34,8 +34,7 @@ console.assert(doubleNum(5) === 10)
  * inputs and computes the sum of those two numbers.
  */
  function sum(num1, num2){
-   var numberSum = num1 + num2;
-     return numberSum;
+  return num1 + num2;
  }
 
 
@@ -64,11 +63,10 @@ console.assert(average(100,200) === 150)
  inputs is not a number, it will return "null."
  */
  function sum(num1, num2){
-  var numberSum = num1 + num2;
   if(Number.isInteger(num1||num2)===false){
     return null;
   }else{
-    return numberSum;
+    return num1 + num2;
   }
  }
 
@@ -101,11 +99,10 @@ console.assert(isNegative(-999) === true)
 // function inside your sum funciton ***
 
 function sum(num1, num2){
-  var numberSum = num1 + num2;
   if(isNegative(num1) || isNegative(num2)){
     return null;
   }else{
-    return numberSum;
+    return num1 + num2;
   }
 }
 console.assert(sum(5,-5) === null)
@@ -206,7 +203,7 @@ console.assert(NUMBER === 96)
 // Make the following assertion work:
 var factory = function() {
     var innerFunc = function() {
-        console.log('hello world')
+        return 'hello world'
     }
     return innerFunc
   }
