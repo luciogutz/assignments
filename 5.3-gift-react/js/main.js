@@ -2,17 +2,17 @@ import React from "react"
 
 export default React.createClass({
 
-
   render() {
     return (
-      <h1> Gifts To Buy </h1>
+      <section>
+      <h1 className="title"> Gifts To Buy </h1>
       <main className="main">
         <form className="giftItem__section">
-          <input className="giftItem" placeholder="type the gift to buy here">
-          <button className="giftSubmit" type="submit" value="post"> ADD </button>
+          <input ref="giftInput" className="giftItem" placeholder="type the gift to buy here"/>
+          <button ref="add" className="giftSubmit" type="submit"> ADD </button>
         </form>
         <div className="overflow">
-          <section className="giftSelected">
+          <section ref="selectionArea" className="giftSelected">
           </section>
         </div>
       </main>
@@ -20,6 +20,7 @@ export default React.createClass({
           <p className="finalTotal"></p>
           <p className="total"> Total: </p>
         </div>
+      </section>
 
     )
 

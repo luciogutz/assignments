@@ -7,6 +7,6 @@ import Main from "./main"
 
 
 render(
-  ( <Main />),
+  ( <Main /> ),
   document.getElementById("app")
 )
