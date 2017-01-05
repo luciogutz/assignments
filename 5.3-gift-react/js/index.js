@@ -1,12 +1,12 @@
-import React from `react`
+import React from "react"
 
-import { render } from `react-dom`
+import { render } from "react-dom"
 
-import Main from `./main`
+import Main from "./main"
 
 
 
 render(
   ( <Main />),
-  document.getElementById(`app`)
+  document.getElementById("app")
 )
