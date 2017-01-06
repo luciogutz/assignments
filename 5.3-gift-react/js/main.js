@@ -4,18 +4,24 @@ export default React.createClass({
 
   getInitialState() {
     return {
-      selectionArea: ""
+      giftInput: ""
     }
   },
   onButtonClick(e) {
     e.preventDefault();
-    var currentInput = e.target.giftInput
+    var giftInputValue = this.state.giftInput;
+    var giftInputArray = giftInputValue.split(",");
+    var giftTextItem = giftInputArray[0];
+    var giftTextAmount = giftInputArray[1];
+    // var currentgiftInput = this.state.giftInput;
     var list = this.refs.selectionArea
+    list.insertAdjacentHTML("afterbegin", '<div class="overflow"><section class="giftSelected"></section></div>');
 
-  this.setState({
-    list: currentInput.textContent
+    this.setState({
+      list: giftTextItem + giftTextAmount
    })
   },
+
   render() {
     return (
       <section>
