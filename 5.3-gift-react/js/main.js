@@ -2,6 +2,19 @@ import React from "react"
 
 export default React.createClass({
 
+  getInitialState() {
+    return {
+      selectionArea: ""
+    }
+  },
+  onButtonClick(e) {
+    e.preventDefault();
+    var currentInput = this.refs.giftInput
+    var list = this.refs.selectionArea
+    this.setState({
+      list: this.currentInput.insertAdjacentHTML("afterbegin")
+    })
+  }
   render() {
     return (
       <section>
@@ -9,7 +22,7 @@ export default React.createClass({
       <main className="main">
         <form className="giftItem__section">
           <input ref="giftInput" className="giftItem" placeholder="type the gift to buy here"/>
-          <button ref="add" className="giftSubmit" type="submit"> ADD </button>
+          <button onClick={ this.onButtonClick } ref="add" className="giftSubmit" type="submit"> ADD </button>
         </form>
         <div className="overflow">
           <section ref="selectionArea" className="giftSelected">
