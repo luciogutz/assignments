@@ -7,19 +7,21 @@ export default React.createClass({
       giftInput: ""
     }
   },
+
   onButtonClick(e) {
     e.preventDefault();
     var giftInputValue = this.state.giftInput;
     var giftInputArray = giftInputValue.split(",");
     var giftTextItem = giftInputArray[0];
     var giftTextAmount = giftInputArray[1];
-    // var currentgiftInput = this.state.giftInput;
-    var list = this.refs.selectionArea
-    list.insertAdjacentHTML("afterbegin", '<div class="overflow"><section class="giftSelected"></section></div>');
+    this.refs.selectionArea.insertAdjacentHTML("afterbegin",
+    `<section class="giftSelected"><button></button>${giftTextItem}</section>`);
+  },
 
+  newInputValue: function(e) {
     this.setState({
-      list: giftTextItem + giftTextAmount
-   })
+      giftInput: e.target.value
+    })
   },
 
   render() {
@@ -28,12 +30,11 @@ export default React.createClass({
       <h1 className="title"> Gifts To Buy </h1>
       <main className="main">
         <form className="giftItem__section">
-          <input ref="giftInput" className="giftItem" placeholder="type the gift to buy here"/>
+          <input onChange={this.newInputValue} value={this.state.giftInput} ref="giftInput" className="giftItem" placeholder="type the gift to buy here"/>
           <button onClick={ this.onButtonClick } ref="add" className="giftSubmit" type="submit"> ADD </button>
         </form>
-        <div className="overflow">
-          <section ref="selectionArea" className="giftSelected">
-          </section>
+        <div ref="selectionArea" className="overflow">
+
         </div>
       </main>
         <div className="totalSection">
