@@ -15,7 +15,7 @@ export default React.createClass({
     var giftTextItem = giftInputArray[0];
     var giftTextAmount = giftInputArray[1];
     this.refs.selectionArea.insertAdjacentHTML("afterbegin",
-    `<section class="giftSelected"><button></button>${giftTextItem}</section>`);
+    `<section class="giftSelected itemList"><button class="checkButton"></button>${giftTextItem}</section>`);
   },
 
   newInputValue: function(e) {
