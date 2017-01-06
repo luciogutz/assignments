@@ -9,12 +9,13 @@ export default React.createClass({
   },
   onButtonClick(e) {
     e.preventDefault();
-    var currentInput = this.refs.giftInput
+    var currentInput = e.target.giftInput
     var list = this.refs.selectionArea
-    this.setState({
-      list: this.currentInput.insertAdjacentHTML("afterbegin")
-    })
-  }
+
+  this.setState({
+    list: currentInput.textContent
+   })
+  },
   render() {
     return (
       <section>
