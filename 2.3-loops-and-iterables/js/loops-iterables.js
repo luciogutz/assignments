@@ -84,33 +84,21 @@ function properSentences(paragraph){
   var capSentence = "";
   for(var i = 0; i < paragraphArray.length; i++){
     var currentParagraphArray = paragraphArray[i];
+    var eachLetter = currentParagraphArray.split("");
+    var firstLetter = currentParagraphArray.charAt(0).toUpperCase();
     var noFirstLetter = currentParagraphArray.slice(1);
-    var firstLetter = currentParagraphArray.slice(0,1);
-    var capFirstLetter = firstLetter.toUpperCase();
-    var properSentence = capFirstLetter + noFirstLetter;
-    // figure out what is going on here.
-    var finalParagraph = properSentence.prototype.join(""
-    );
-    console.log(finalParagraph);
+    var properSentence1 = firstLetter + noFirstLetter;
+    if(i < paragraphArray.length -1){
+      properSentence1 = properSentence1 + ". ";
+    } else {
+      properSentence1 = properSentence1;
+    }
+    capSentence += properSentence1;
   }
-
-
-
-
-//
-//
-//     for (var i = 0; i < paragraphArray.length; i++){
-//         if (i !== paragraphArray.length -1) {
-//           paragraphArray[i] = paragraphArray.charAt(0).toUpperCase() + paragraphArray.splice(1) + ". ";
-//         }else{
-//           paragraphArray[i] = paragraphArray.charAt(0).toUpperCase() + paragraphArray.splice(1)
-//         }
-//     }
-//     paragraphArray = paragraphArray.join("");
-//     return paragraphArray;
+  return capSentence;
 }
-//
-//
+
+
 console.assert(properSentences(paragraph) === "It was a fine morning. The wine was good. Light slanted in through the cafe window.")
 
 // PART 4: write a function called iPutTheFunIn(). It should take a string as input. The output should be a copy of the original string with the word 'fun' inserted into the center of the string.
@@ -121,7 +109,7 @@ function iPutTheFunIn(text){
       for (var i = 0; i < textArray.length; i++){
 
         var findMiddle = Math.floor(textArray.length/2);
-        var fun = text.slice(0, findMiddle) + "fun" +text.slice(findMiddle);
+        var fun = text.slice(0, findMiddle) + "fun" + text.slice(findMiddle);
 
           return fun;
       }
