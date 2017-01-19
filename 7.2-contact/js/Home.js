@@ -35,11 +35,11 @@ export default React.createClass({
   },
   render() {
     return(
-      <section>
-        <h1> My Contact List </h1>
+      <section className="contact-Wrapper">
+        <h1 className="contacts-Title"> My Contact List </h1>
         {
            this.props.contacts.map((contact, i) => {
-           return <Link to={`User/${contact.name}/${contact.email}/${contact.phone}/${contact.location}`} key={i}><img className="contact-Image" src="https://d2wnxi2v4fzw0h.cloudfront.net/assets/fallback/preview_default_profile.png"/> {contact.name} </Link>
+           return <Link className="contacts" to={`User/${contact.name}/${contact.email}/${contact.phone}/${contact.location}`} key={i}><img className="contact-Image" src="https://d2wnxi2v4fzw0h.cloudfront.net/assets/fallback/preview_default_profile.png"/> {contact.name} </Link>
           })
         }
       </section>

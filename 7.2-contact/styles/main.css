@@ -2,6 +2,60 @@
   box-sizing: border-box;
 }
 
+.contacts {
+  font-size: 18px;
+  padding-left: 10px;
+  color: grey;
+  text-decoration: none;
+  border-bottom: solid grey 1px;
+  display: block;
+  line-height: 65px;
+  width: 100%;
+  height: 65px;
+}
+
 .contact-Image {
-  height: 20px;
+  filter: grayscale(100%);
+  height: 30px;
+  vertical-align: text-bottom;
+  margin-right: 3%;
+}
+
+.contacts-Title {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: white;
+  border-radius: 12px 12px 0 0;
+  font-size: 22px;
+  background-color: rgb(129, 188, 57);
+  width: 100%;
+  display: inline-block;
+  padding: 8px;
+  height: 65px;
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+.contact-Wrapper {
+  margin: 10% 25% 0 25%;
+}
+
+.userImage {
+  border-radius: 200px;
+  background-color: rgb(129, 188, 57);
+  height: 400px;
+  width: 400px;
+  margin: 10% 25% 0 25%;
+}
+
+.userInfo {
+  font-size: 18px;
+  padding-left: 10px;
+  color: grey;
+  text-decoration: none;
+  border-bottom: solid grey 1px;
+  display: block;
+  line-height: 65px;
+  width: 100%;
+  height: 65px;
 }
