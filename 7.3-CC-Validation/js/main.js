@@ -4,20 +4,25 @@ import Validator from 'validator'
 export default React.createClass({
   getInitialState() {
     return{
-      isCardNumberValid: true
+      isCardNumberValid: false
     }
   },
   onInputChange(e) {
-    var cardNumber = isNumeric()
+    var cardNumber = Validator.isCreditCard(e.target.value);
+    console.log(cardNumber);
+      this.setState({isCardNumberValid:cardNumber})
+  },
+  onCardSubmit() {
+
+
   },
   render() {
     return(
       <section>
         <form>
-          <input onChange="onInputChange" placeholder="1234 5678 9012 3456" type="text"/>
-          <input onClick="" type="submit"/>
+          <input className={this.state.isCardNumberValid ? "valid" : "invalid"} onChange={this.onInputChange} type="text"/>
+          <input className={this.state.isCardNumberValid ? "valid" : "invalid"} type="submit"/>
         </form>
-        <h1> Is this rendering </h1>
       </section>
     )
   },
