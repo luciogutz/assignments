@@ -2,9 +2,20 @@
   box-sizing: border-box;
 }
 .valid {
+  height: 30px;
   border-color: green;
 }
 
 .invalid {
+  height: 30px;
   border-color: red;
+}
+
+.visible {
+  display: block;
+  color: green;
+}
+
+.hidden {
+  display: none;
 }
