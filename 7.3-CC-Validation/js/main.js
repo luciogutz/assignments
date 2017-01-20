@@ -18,7 +18,6 @@ export default React.createClass({
     }else{
       this.refs.submit.value = ""
     }
-
   },
   render() {
     return(
