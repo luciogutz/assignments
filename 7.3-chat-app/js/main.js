@@ -6,41 +6,55 @@ export default React.createClass({
     ajax({
       url: "https://tiny-tiny.herokuapp.com/collections/lucioChat-app",
       dataType: "json",
-      messageHistory: this.onAjaxInitialLoad
+      success: this.onAjaxInitialLoad
     })
   },
-  setInitialState() {
+  getInitialState() {
     return {
     chats: "",
     chatHistory: []
    }
   },
-  onAjaxInitialLoad(messages){
+  onAjaxInitialLoad(response){
+    var chatAppended = response.reverse()
     this.setState({
-      chatHistory: messages
+      chatHistory: chatAppended
     })
   },
-  onPostAjaxLoad(messages){
+  onPostAjaxLoad(response){
     this.setState({
-      chatHistory: this.state.chatHistory.concat(messages)
+      chatHistory: this.state.chatHistory.concat(response)
     })
   },
-  onChatChange(c) {
-    var currentChatInput = c.target.value
+  onChatChange(e) {
+    var currentChatInput = e.target.value
+    console.log(currentChatInput)
     this.setState({
       chats: currentChatInput
     })
   },
-  onChatSubmit() {
-    var currentChat = this.chats
+  onChatSubmit(e) {
+    var currentChat = this.state.chats
+    ajax({
+      url: "https://tiny-tiny.herokuapp.com/collections/lucioChat-app",
+      dataType: "json",
+      type: "post",
+      data: {
+        currentChat
+      },
+    })
   },
   render() {
     return(
       <section>
-        <form>
-          <p> {} </p>
+          {
+            this.state.chatHistory.map((chat, i)=>{
+              return <p key={i}> {chat.currentChat} </p>
+            })
+          }
+          <form>
           <input onChange={this.onChatChange} placeholder="Type in message here" type="text"/>
-          <input type="submit"/>
+          <input onClick={ this.onChatSubmit } type="submit"/>
         </form>
       </section>
     )
