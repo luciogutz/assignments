@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+.mainSection {
+  margin-right: 5%;
+  width: 60%;
+  border: solid black 1px;
+  float: right;
+}
+
+.posts {
+  margin-left: 5%;
+  height: 50px;
+  font-size: 22px;
+}

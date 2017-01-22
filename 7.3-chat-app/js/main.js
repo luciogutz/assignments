@@ -34,6 +34,7 @@ export default React.createClass({
     })
   },
   onChatSubmit(e) {
+    e.preventDefault()
     var currentChat = this.state.chats
     ajax({
       url: "https://tiny-tiny.herokuapp.com/collections/lucioChat-app",
@@ -42,20 +43,26 @@ export default React.createClass({
       data: {
         currentChat
       },
+      success: this.onPostAjaxLoad
     })
   },
   render() {
     return(
       <section>
+        <aside>
+          <h1> This is the side section </h1>
+        </aside>
+        <article className="mainSection">
           {
             this.state.chatHistory.map((chat, i)=>{
-              return <p key={i}> {chat.currentChat} </p>
+              return <p className="posts"><span key={i}> { chat.currentChat } </span></p>
             })
           }
-          <form>
+        <form>
           <input onChange={this.onChatChange} placeholder="Type in message here" type="text"/>
           <input onClick={ this.onChatSubmit } type="submit"/>
         </form>
+        </article>
       </section>
     )
   },
