@@ -17,6 +17,14 @@
   padding-top: 24px;
 }
 
+.blue {
+  background-color: rgb(44, 73, 133);
+}
+
+.black {
+  background-color: black;
+}
+
 .article__Amount {
   font-size: 120px;
   margin: 0;
@@ -41,7 +49,12 @@
 }
 
 .features {
-  border-bottom: solid lightgrey 1px;
+  border-bottom: solid
+  rgb(236, 236, 236) 1px;
+  border-left: solid
+  rgb(236, 236, 236) 1px;
+  border-right: solid
+  rgb(236, 236, 236) 1px;
   width: 98%;
   line-height: 3em;
   height: 3em;
@@ -52,6 +65,33 @@
   font-size: 18px;
   margin-left: auto;
   margin-right: auto;
+  color: rgb(81, 95, 101);
+}
+
+.features__Button {
+  height: 4em;
+  width: 10em;
+  border-radius: 30px;
+  background-color: white;
+  border: solid rgb(236, 236, 236) 1px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+.button__Container {
+  padding-top: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  height: 80px;
+  border-left: solid
+  rgb(236, 236, 236) 1px;
+  border-right: solid
+  rgb(236, 236, 236) 1px;
+  border-bottom: solid rgb(236, 236, 236) 1px;
 }
 
 .header {
@@ -90,4 +130,36 @@
 
 .headerImage {
   width: 1100px;
+}
+
+.textBlock__Container {
+  width: 478px;
+  border: solid black 1px;
+  padding: 24px;
+}
+
+.textBlock__Container: p {
+  width: 478px;
+  border: solid black 1px;
+  padding: 24px;
+  font-size: 16px;
+}
+
+.text {
+  font-size: 18px;
+  color: rgb(81, 95, 101);
+}
+
+.footer {
+  background-color: black;
+  color: grey;
+  font-size: 24px;
+  height: 115px;
+  padding: 12px;
+  text-align: center;
+}
+
+span {
+text-decoration: underline;
+color: white;
 }
