@@ -3,7 +3,7 @@
 }
 
 .article__Container {
-  width: 478px;
+  width: 380px;
 }
 
 .article__Header {
@@ -45,7 +45,7 @@
 }
 
 .features__Container {
-  width: 478px;
+  width: 380px;
 }
 
 .features {
@@ -86,7 +86,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 98%;
-  height: 80px;
+  height: 5em;
   border-left: solid
   rgb(236, 236, 236) 1px;
   border-right: solid
@@ -102,12 +102,12 @@
 .menu {
   display: inline-block;
   font-size: 16px;
-  margin-right: 50px;
+  margin-right: 1em;
   padding-left: 8px;
 }
 
 .resp__Container {
-  width: 478px;
+  width: 380px;
   height: 250px;
   overflow: hidden;
 }
@@ -123,8 +123,8 @@
 }
 
 .imageTitle__Container {
-  height: 200px;
-  width: 478px;
+  height: 250px;
+  width: 380px;
   position: relative;
 }
 
@@ -133,13 +133,12 @@
 }
 
 .textBlock__Container {
-  width: 478px;
-  border: solid black 1px;
+  width: 380px;
   padding: 24px;
 }
 
 .textBlock__Container: p {
-  width: 478px;
+  width: 380px;
   border: solid black 1px;
   padding: 24px;
   font-size: 16px;
@@ -154,7 +153,7 @@
   background-color: black;
   color: grey;
   font-size: 24px;
-  height: 115px;
+  height: 8em;
   padding: 12px;
   text-align: center;
 }
@@ -162,4 +161,56 @@
 span {
 text-decoration: underline;
 color: white;
+}
+
+@media only screen and (min-width: 30em) {
+    /* Style adjustments for viewports that meet the condition */
+    .imageTitle__Container {
+      height: 300px;
+      width: 29.5em;
+      position: relative;
+  }
+
+    .resp__Container {
+      width: 29.8em;
+      height: 350px;
+  }
+
+    .imageTitle__Container {
+      width: 29.8em;
+  }
+
+    .article__Container {
+      width: 29.8em;
+  }
+
+    .features__Container {
+      width: 29.8em;
+  }
+
+    .textBlock__Container {
+      width: 29.8em;
+  }
+}
+
+@media only screen and (min-width: 48em){
+
+    .resp__Container {
+      width: 48em;
+  }
+    .imageTitle__Container {
+      height: 250px;
+      width: 48em;
+      position: relative;
+  }
+    .article__Container {
+      width: 15.9em;
+      display: inline-block;
+      margin-left: 0;
+  }
+
+    .textBlock__Container {
+      width: 48em;
+      display: block;
+  }
 }
