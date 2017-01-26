@@ -151,9 +151,10 @@
 
 .footer {
   background-color: black;
+  width: 380px;
   color: grey;
-  font-size: 24px;
-  height: 8em;
+  font-size: 18px;
+  height: 6em;
   padding: 12px;
   text-align: center;
 }
@@ -191,6 +192,9 @@ color: white;
     .textBlock__Container {
       width: 29.8em;
   }
+    .footer {
+      width: 27em;
+    }
 }
 
 @media only screen and (min-width: 48em){
@@ -204,13 +208,70 @@ color: white;
       position: relative;
   }
     .article__Container {
-      width: 15.9em;
+      width: 15.5em;
       display: inline-block;
-      margin-left: 0;
+      margin-left: 4px;
   }
 
     .textBlock__Container {
       width: 48em;
       display: block;
   }
+
+    .text_Boxes {
+      width: 21em;
+      display: inline-block;
+      margin: 0;
+      vertical-align: text-top;
+      margin-left: 3%;
+    }
+
+    .text_Boxes-2-4 {
+      margin-left: 2%;
+    }
+
+    .footer {
+      width: 42em;
+    }
+
+    .title {
+      font-size: 42px;
+    }
+}
+
+@media only screen and (min-width: 61em){
+    .resp__Container {
+      width: 70em;
+      height: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .imageTitle__Container {
+      width: 100%;
+      position: relative;
+    }
+
+    .article_Wrapper {
+      margin-left: 18.5%;
+    }
+
+    .textBox_Wrapper {
+      margin-left: 18.5%;
+    }
+
+    .text_Boxes {
+      width: 21em;
+      display: inline-block;
+      margin: 0;
+      vertical-align: text-top;
+      margin-left: 3%;
+    }
+
+    .text_Boxes-2-4 {
+      margin-left: 2%;
+    }
+
+    .footer {
+      width: 70em;
+    }
 }
