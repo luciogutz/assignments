@@ -199,14 +199,16 @@ color: white;
 
 @media only screen and (min-width: 48em){
 
+  .imageTitle__Container {
+    height: 250px;
+    width: 48em;
+    position: relative;
+  }
+
     .resp__Container {
       width: 48em;
   }
-    .imageTitle__Container {
-      height: 250px;
-      width: 48em;
-      position: relative;
-  }
+
     .article__Container {
       width: 15.5em;
       display: inline-block;
@@ -240,15 +242,17 @@ color: white;
 }
 
 @media only screen and (min-width: 61em){
+
+    .imageTitle__Container {
+      width: 100%;
+      position: relative;
+    }
+
     .resp__Container {
       width: 70em;
       height: 450px;
       margin-left: auto;
       margin-right: auto;
-    }
-    .imageTitle__Container {
-      width: 100%;
-      position: relative;
     }
 
     .article_Wrapper {
