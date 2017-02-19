@@ -7,29 +7,31 @@ $(function(){
   var $backButton = $body.find("[data-js='backButton']");
   var $modalImgElement = $body.find("[data-js='modalImg']");
   var $thumbnailContainerElements = $body.find("[data-js='thumbnailContainer']");
+  console.log($thumbnailContainerElements);
   var $imgButton = $body.find("[data-js='button1']");
-  // functions for album 1
+
+
   $thumbnailContainerElements.on("click", function(e){
     $modal.removeClass("hidden");
 
 
     var $clickedThumbnailContainerElements = $(this);
+
     var $clickedThumbnailImageElements = $clickedThumbnailContainerElements.find("[data-js='albumImg']")
+
     var sourceOfClickedThumbnailImage = $clickedThumbnailImageElements.attr("src");
+    console.log(sourceOfClickedThumbnailImage);
     var altOfClickedThumbnailImage = $clickedThumbnailImageElements.attr("alt");
-    //
+
     $modalImgElement.attr("src", sourceOfClickedThumbnailImage);
+    console.log(altOfClickedThumbnailImage);
+
     $modalImgElement.attr("alt", altOfClickedThumbnailImage);
-    // var $albumImg1 = $("<img>")
-    //   .attr({
-    //     alt: "yoda",
-    //     class: "imgPage3",
-    //     src: "http://www.sideshowtoy.com/photo.php?sku=400302"
-    //   });
-    // var imgModal1 = $modal.append($albumImg1);
+
   });
   $backButton.on("click", function(e){
-    $modal.addClass("hidden")
+    $modal.addClass("hidden");
+    $modalImgElement.attr("src", "");
   });
 
   // // functions for album 2

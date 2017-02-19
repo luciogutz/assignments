@@ -172,9 +172,11 @@ h1 {
 
 .imgPage3 {
   border: solid white 2px;
-  width: 350px;
+  width: 415px;
   height: 350px;
   margin: 0;
+  display: block;
+  margin-left: -7%;
 }
 
 .notHidden {
